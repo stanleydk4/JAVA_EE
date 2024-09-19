@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dump JSP</title>
+<link href="<%=request.getContextPath() %>/style/myStyle.css" rel="stylesheet" ></link>
+<%String croot = request.getContextPath(); %>
+</head>
+<body>
+	<h2>Dump JSP</h2>
+	<img src="../image/latiyas.jpg">
+	<table border='1' style='margin:auto'>
+		<tbody>
+			<%for(int i=1;i<10;i++){ %>
+				<tr>
+					<%for(int j=1;j<10;j++){ %>
+						<td><%= i%>*<%= j%>=</td><td><%=i*j%></td>
+					<%}%>
+				</tr>
+			<%}%>
+		</tbody>
+	</table>
+	<table border='1' style='margin:auto'>
+		<thread><tr><th>Header Name</th><th>Header Value</th></tr></thread>
+			<tbody>
+				<%while(headerNames.hasMoreElements()) { %>
+					<%String headerName = headerNames.nextElement(); %>
+					<%String headerValue = request.getHeader(headerName); %>
+					<tr><td><%= headerName%></td><td><%= headerValue%></td></tr>
+				<% }%>
+			</tbody>
+	</table>
+	<br/><a href ="<%=croot %>/">Back</a>
+</body>
+</html>

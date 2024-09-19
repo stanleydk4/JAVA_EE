@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dump JSP</title>
+<link href="<%=request.getContextPath() %>style/myStyle.css" rel="stylesheet" ></link>
+</head>
+<body>
+	<h2>Dump JSP</h2>
+	<img src="../image/latiyas.jpg">
+	<table>
+		<tbody>
+			<%for(int i=1;i<10;i++){ %>
+				<tr>
+					<%for(int j=1;j<10;j++){ %>
+						<td><%= i%>*<%= j%>=</td><td><%=i*j%></td>
+		</tbody>
+	</table>
+</body>
+</html>
