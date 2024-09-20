@@ -3,4 +3,8 @@
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="java.util.Enumeration"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="com.systex.model.Customer"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpSession"/>
 </qualifiedTypeNameHistroy>

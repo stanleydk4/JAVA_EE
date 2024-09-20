@@ -30,4 +30,37 @@
     <url-pattern>/DumpServlet</url-pattern>
     <url-pattern>/admin/dump.view</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CreateCustomerCintroller</display-name>
+    <servlet-name>CreateCustomerCintroller</servlet-name>
+    <servlet-class>com.systex.controller.CreateCustomerCintroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateCustomerCintroller</servlet-name>
+    <url-pattern>/customer/ccController.do</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>EncodingFilter</display-name>
+    <filter-name>EncodingFilter</filter-name>
+    <filter-class>com.systex.util.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>EncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+    <dispatcher>REQUEST</dispatcher>
+    <dispatcher>FORWARD</dispatcher>
+    <dispatcher>INCLUDE</dispatcher>
+    <dispatcher>ERROR</dispatcher>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CreateCustomer</display-name>
+    <servlet-name>CreateCustomer</servlet-name>
+    <servlet-class>com.systex.controller.CreateCustomer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateCustomer</servlet-name>
+    <url-pattern>/CreateCustomer.do</url-pattern>
+  </servlet-mapping>
 </web-app>

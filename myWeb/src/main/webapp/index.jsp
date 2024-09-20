@@ -18,6 +18,7 @@
 		<a href ="customer/createCustomer.jsp">Create Customer</a><br/>
 		<a href ="hello.jsp">Hello JSP</a><br/>
 		<a href ="admin/dump.jsp">Dump JSP</a><br/>
+		<a href ="customer/createCustomer1.jsp">測試交談時期</a><br/>
 	</p>
 </body>
 </html>

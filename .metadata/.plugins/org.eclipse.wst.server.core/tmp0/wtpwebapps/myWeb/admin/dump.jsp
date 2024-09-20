@@ -1,3 +1,4 @@
+<%@page import="java.util.Date"%>
 <%@page import="java.util.Arrays"%>
 <%@page import="java.util.Enumeration"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -14,6 +15,11 @@
 </head>
 <body>
 	<h2>Dump JSP</h2>
+	<%= session.isNew() %>
+	<%= session.getId() %>
+	<%= new Date(session.getLastAccessedTime()) %>
+	<%= new Date(session.getCreationTime()) %>
+	<%= session.getMaxInactiveInterval() %>
 	<img src="../image/latiyas.jpg">
 	<table border='1' style='margin:auto'>
 		<tbody>
@@ -52,6 +58,7 @@
 			<tr><td><%=name%></td><td><%=value %></td></tr>
 		<%} %>
 	</table>
+	<% session.invalidate(); %>
 	<br/><a href ="<%=croot %>/">Back</a>
 </body>
 </html>
